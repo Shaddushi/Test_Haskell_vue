@@ -9,5 +9,5 @@ import Data.Aeson (object, (.=))
 apiRoutes :: ScottyM ()
 apiRoutes = do
     -- Route pour obtenir un message JSON
-    get "/api/message" $ do
+    get "/api/route" $ do
         json $ object ["message" .= ("Hello " :: String)]
